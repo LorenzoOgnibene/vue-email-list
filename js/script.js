@@ -11,12 +11,12 @@ createApp({
     methods:{
            getRandomEmail(){
             for(let i = 0; i < 10; i++){
-            axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-            .then((response) => {
-                console.log(response.data);
-                    this.randomEmail.push(response.data)
-                })
-               }
+                axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+                .then((response) => {
+                    console.log(response.data);
+                        this.randomEmail.push(response.data)
+                    })
+                }
                console.log(this.randomEmail)
             }
         
@@ -25,3 +25,5 @@ createApp({
         this.getRandomEmail();
     }
 }).mount('#app')
+
+

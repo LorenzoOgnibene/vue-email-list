@@ -12,7 +12,7 @@
             <main>
                 <div class="list-emails">
                     <ul>
-                        <li v-for="element in randomEmail">{{element.response}}</li>
+                        <li v-for="element in randomEmail" v-show="randomEmail.length == 10">{{element.response}}</li>
                     </ul>
                 </div>
             </main>
